@@ -6,7 +6,7 @@
 
   <title>CADJEWELS</title>
 
-<link rel="icon" type="image/jpeg" href="CADJEWELS.jpg">
+  <link rel="icon" type="image/jpeg" href="CADJEWELS.jpg">
 
   <style>
     * {
@@ -20,9 +20,11 @@
       font-family: Arial, Helvetica, sans-serif;
       background: #f7f7f5;
       color: #111;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       padding: 24px;
     }
 
@@ -32,20 +34,26 @@
       text-align: center;
     }
 
-    .logo {
-  width: 90px;
-  height: 90px;
-  margin: 0 auto 18px;
-  border-radius: 50%;
-  overflow: hidden;
-}
+    /* LOGO */
 
-.logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+    .logo {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 18px;
+
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      display: block;
+    }
+
+    /* TITLE */
 
     h1 {
       font-size: 26px;
@@ -59,61 +67,133 @@
       margin-bottom: 32px;
     }
 
+    /* LINKS */
+
     .links {
       display: flex;
       flex-direction: column;
       gap: 14px;
     }
 
-   .link {
-  width: 100%;
-  text-decoration: none;
-  color: #111;
-  background: #fff;
-  border: 1px solid #e6e6e6;
-  border-radius: 16px;
-  padding: 16px 18px;
+    .link {
+      width: 100%;
 
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 12px;
+      text-decoration: none;
 
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1;
+      color: #111;
+      background: #fff;
 
-  transition: 0.2s ease;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
-}
+      border: 1px solid #e6e6e6;
+      border-radius: 16px;
 
-.link svg {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  display: block;
-}
+      padding: 16px 18px;
 
-.link span {
-  display: block;
-}
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
 
-.link:hover {
-  transform: translateY(-2px);
-  border-color: #111;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-}
+      gap: 12px;
 
-.link:active {
-  transform: scale(0.98);
-}
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1;
 
-  
+      transition:
+        transform 0.2s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    .link svg {
+      width: 20px;
+      height: 20px;
+
+      flex-shrink: 0;
+      display: block;
+    }
+
+    .link span {
+      display: block;
+    }
+
+    /* GENERAL HOVER */
+
+    .link:hover {
+      transform: translateY(-3px);
+      color: #fff;
+
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+    }
+
+    /* INSTAGRAM */
+
+    .instagram:hover {
+      background: linear-gradient(
+        135deg,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d,
+        #f77737
+      );
+
+      border-color: transparent;
+    }
+
+    /* FACEBOOK */
+
+    .facebook:hover {
+      background: #1877f2;
+      border-color: #1877f2;
+    }
+
+    /* WEBSITE */
+
+    .website:hover {
+      background: #111;
+      border-color: #111;
+    }
+
+    /* WHATSAPP */
+
+    .whatsapp:hover {
+      background: #25d366;
+      border-color: #25d366;
+    }
+
+    /* CLICK EFFECT */
+
+    .link:active {
+      transform: scale(0.98);
+    }
+
+    /* FOOTER */
 
     footer {
       margin-top: 35px;
+
       font-size: 12px;
       color: #aaa;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 480px) {
+      body {
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 100%;
+      }
+
+      .link {
+        padding: 17px 18px;
+      }
     }
   </style>
 </head>
@@ -122,9 +202,9 @@
 
   <main class="container">
 
-   <div class="logo">
-  <img src="CADJEWELS.jpg" alt="CAD Jewels Logo">
-</div>
+    <div class="logo">
+      <img src="CADJEWELS.jpg" alt="CAD Jewels Logo">
+    </div>
 
     <h1>CADJEWELS</h1>
 
@@ -132,43 +212,159 @@
       Connect with us
     </p>
 
+
     <div class="links">
 
-  <a class="link" href="https://www.instagram.com/cadjewels_modeling/" target="_blank">
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
-      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle>
-      <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"></circle>
-    </svg>
-    <span>Instagram</span>
-  </a>
+      <!-- INSTAGRAM -->
 
-  <a class="link" href="https://www.facebook.com/profile.php?id=61578260183870" target="_blank">
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v7h4v-7h3l1-4h-4V9c0-.7.3-1 1-1z" fill="currentColor"></path>
-    </svg>
-    <span>Facebook</span>
-  </a>
+      <a
+        class="link instagram"
+        href="https://www.instagram.com/cadjewels_modeling/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
 
-  <a class="link" href="https://cadjewels.com/" target="_blank">
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle>
-      <path d="M3 12h18" fill="none" stroke="currentColor" stroke-width="2"></path>
-      <path d="M12 3c3 3 3 15 0 18" fill="none" stroke="currentColor" stroke-width="2"></path>
-      <path d="M12 3c-3 3-3 15 0 18" fill="none" stroke="currentColor" stroke-width="2"></path>
-    </svg>
-    <span>Website</span>
-  </a>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
 
-  <a class="link" href="https://wa.me/37444762501" target="_blank">
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.4-4A8 8 0 1 1 20 11.5z" fill="none" stroke="currentColor" stroke-width="2"></path>
-      <path d="M9 8.5c.3 2.2 2.3 4.2 4.5 4.5" fill="none" stroke="currentColor" stroke-width="2"></path>
-    </svg>
-    <span>WhatsApp</span>
-  </a>
+          <rect
+            x="3"
+            y="3"
+            width="18"
+            height="18"
+            rx="5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+          </rect>
 
-</div>
+          <circle
+            cx="12"
+            cy="12"
+            r="4"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+          </circle>
+
+          <circle
+            cx="17.5"
+            cy="6.5"
+            r="1.2"
+            fill="currentColor">
+          </circle>
+
+        </svg>
+
+        <span>Instagram</span>
+
+      </a>
+
+
+      <!-- FACEBOOK -->
+
+      <a
+        class="link facebook"
+        href="https://www.facebook.com/profile.php?id=61578260183870"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+
+          <path
+            d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v7h4v-7h3l1-4h-4V9c0-.7.3-1 1-1z"
+            fill="currentColor">
+          </path>
+
+        </svg>
+
+        <span>Facebook</span>
+
+      </a>
+
+
+      <!-- WEBSITE -->
+
+      <a
+        class="link website"
+        href="https://cadjewels.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+
+          <circle
+            cx="12"
+            cy="12"
+            r="9"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+          </circle>
+
+          <path
+            d="M3 12h18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+          </path>
+
+          <path
+            d="M12 3c3 3 3 15 0 18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+          </path>
+
+          <path
+            d="M12 3c-3 3-3 15 0 18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+          </path>
+
+        </svg>
+
+        <span>Website</span>
+
+      </a>
+
+
+      <!-- WHATSAPP -->
+
+      <a
+        class="link whatsapp"
+        href="https://wa.me/37444762501"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+
+          <path
+            d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.4-4A8 8 0 1 1 20 11.5z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+          </path>
+
+          <path
+            d="M9 8.5c.3 2.2 2.3 4.2 4.5 4.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+          </path>
+
+        </svg>
+
+        <span>WhatsApp</span>
+
+      </a>
+
+    </div>
+
+
     <footer>
       © 2026 CADJEWELS
     </footer>
