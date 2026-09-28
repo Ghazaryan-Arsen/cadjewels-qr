@@ -34,15 +34,19 @@
       text-align: center;
     }
 
-    /* LOGO */
+    /* =========================
+       LOGO
+    ========================== */
 
     .logo {
-      width: 90px;
-      height: 90px;
-      margin: 0 auto 18px;
+      width: 105px;
+      height: 105px;
+      margin: 0 auto 20px;
 
       border-radius: 50%;
       overflow: hidden;
+
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     }
 
     .logo img {
@@ -53,7 +57,9 @@
       display: block;
     }
 
-    /* TITLE */
+    /* =========================
+       TITLE
+    ========================== */
 
     h1 {
       font-size: 26px;
@@ -67,7 +73,9 @@
       margin-bottom: 32px;
     }
 
-    /* LINKS */
+    /* =========================
+       LINKS
+    ========================== */
 
     .links {
       display: flex;
@@ -109,8 +117,8 @@
     }
 
     .link svg {
-      width: 20px;
-      height: 20px;
+      width: 21px;
+      height: 21px;
 
       flex-shrink: 0;
       display: block;
@@ -120,7 +128,9 @@
       display: block;
     }
 
-    /* GENERAL HOVER */
+    /* =========================
+       DESKTOP HOVER
+    ========================== */
 
     .link:hover {
       transform: translateY(-3px);
@@ -129,7 +139,7 @@
       box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
     }
 
-    /* INSTAGRAM */
+    /* Instagram */
 
     .instagram:hover {
       background: linear-gradient(
@@ -144,45 +154,55 @@
       border-color: transparent;
     }
 
-    /* FACEBOOK */
+    /* Facebook */
 
     .facebook:hover {
       background: #1877f2;
       border-color: #1877f2;
     }
 
-    /* WEBSITE */
+    /* LinkedIn */
+
+    .linkedin:hover {
+      background: #0a66c2;
+      border-color: #0a66c2;
+    }
+
+    /* Website */
 
     .website:hover {
       background: #111;
       border-color: #111;
     }
 
-    /* WHATSAPP */
+    /* WhatsApp */
 
     .whatsapp:hover {
       background: #25d366;
       border-color: #25d366;
     }
 
-    /* CLICK EFFECT */
-
     .link:active {
       transform: scale(0.98);
     }
 
-    /* FOOTER */
+    /* =========================
+       FOOTER
+    ========================== */
 
     footer {
       margin-top: 35px;
-
       font-size: 12px;
       color: #aaa;
     }
 
-    /* MOBILE */
+    /* =========================
+       MOBILE / TOUCH DEVICES
+       Brand colors always visible
+    ========================== */
 
-    @media (max-width: 480px) {
+    @media (hover: none), (pointer: coarse) {
+
       body {
         padding: 20px;
       }
@@ -193,8 +213,63 @@
 
       .link {
         padding: 17px 18px;
+        color: #fff;
+
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
+      }
+
+      /* Instagram */
+
+      .instagram {
+        background: linear-gradient(
+          135deg,
+          #833ab4,
+          #c13584,
+          #e1306c,
+          #fd1d1d,
+          #f77737
+        );
+
+        border-color: transparent;
+      }
+
+      /* Facebook */
+
+      .facebook {
+        background: #1877f2;
+        border-color: #1877f2;
+      }
+
+      /* LinkedIn */
+
+      .linkedin {
+        background: #0a66c2;
+        border-color: #0a66c2;
+      }
+
+      /* Website */
+
+      .website {
+        background: #111;
+        border-color: #111;
+      }
+
+      /* WhatsApp */
+
+      .whatsapp {
+        background: #25d366;
+        border-color: #25d366;
+      }
+
+      .link:hover {
+        transform: none;
+      }
+
+      .link:active {
+        transform: scale(0.97);
       }
     }
+
   </style>
 </head>
 
@@ -202,18 +277,26 @@
 
   <main class="container">
 
+    <!-- LOGO -->
+
     <div class="logo">
       <img src="CADJEWELS.jpg" alt="CAD Jewels Logo">
     </div>
 
+
+    <!-- TITLE -->
+
     <h1>CADJEWELS</h1>
 
     <p class="subtitle">
-      Connect with us
+      Follow us on
     </p>
 
 
+    <!-- LINKS -->
+
     <div class="links">
+
 
       <!-- INSTAGRAM -->
 
@@ -279,6 +362,63 @@
         </svg>
 
         <span>Facebook</span>
+
+      </a>
+
+
+      <!-- LINKEDIN -->
+
+      <a
+        class="link linkedin"
+        href="https://www.linkedin.com/in/andranik-kosoyan-9b5009393/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+
+          <rect
+            x="3"
+            y="3"
+            width="18"
+            height="18"
+            rx="2"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+          </rect>
+
+          <circle
+            cx="8"
+            cy="8"
+            r="1.2"
+            fill="currentColor">
+          </circle>
+
+          <path
+            d="M7 11v6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+          </path>
+
+          <path
+            d="M11 17v-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+          </path>
+
+          <path
+            d="M11 14c0-2 1-3 2.7-3 1.8 0 3.3 1.2 3.3 3.5V17"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+          </path>
+
+        </svg>
+
+        <span>LinkedIn</span>
 
       </a>
 
@@ -364,6 +504,8 @@
 
     </div>
 
+
+    <!-- FOOTER -->
 
     <footer>
       © 2026 CADJEWELS
